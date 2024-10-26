@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body {
+    background-color: rgb(218, 136, 59);
+    padding: 20px;
+  }
+/*--- NAVBAR ---*/
+  .navbar {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .margenes.navbar.navbar-expand-lg.navbar-light {
+    background-color: #fff;
+  }
+  .navbar-brand {
+    padding-left: 15px;
+  }
+  
+  .navbar-toggler:hover {
+    background-color: #fff;
+  }
+  .carrito_logo {
+    width: 45px;
+    margin-right: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .carrito_logo:hover {
+    transform: translateY(-3px);
+  }
+  /*--- MAIN ---*/
+  .parrafo_container {
+    padding: 10px;
+    background-color: #feb75b;
+    color: #fff;
+    border-radius: 10px;
+    
+    font-size: 18px;
+  }
+  main h2 {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  hr {
+    color: #fff;
+    height: 10px;
+    border: 2px solid #fff;
+    
+
+  }
+  /*--- CARD INICIO ---*/
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card img{
+  align-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.btn-primary {
+  background-color: #feb75b;
+  border-color: #feb75b;
+}
+.btn-primary:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+/*--- ABOUT US SECTION ---*/
+.about-us {
+  background-color: #feb75b;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/*--- SECTION CLIENTES ---*/
+.client-reviews {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.client-reviews h2 {
+  font-size: 32px;
+  color: #004d4d;
+  margin-bottom: 30px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.review {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.review p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.review span {
+  font-size: 14px;
+  color: #666;
+}
+
+/*--- TIENDA ---*/
+#contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+label{
+  margin: 8px;
+  margin-left: 40px;
+  font-size: 21px;
+}
+.filter {
+  margin-left: 20px;
+  color: #fff;
+  background-color: #feb75b;
+  border-radius: 10px;
+  max-width: 445px;
+  min-width: 350px;
+  font-size: 18px;
+}
+/*--- CARD TIENDA ---*/
+.card {
+  width: 300px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  color: #fff;
+  background-color: #feb75b;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 250px;           
+  overflow: hidden;
+}
+
+.card-image img {
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; 
+  border: 2px solid #27ae60;
+  border-radius: 5px;
+  border-top: none;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-nombre {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-precio {
+  font-size: 1.2rem;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+.btn-compra {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-compra:hover {
+  background-color: #219150;
+}
+h2 {
+  font-size: 15px;
+  text-align: center;
+}
+/*--- CARRITO ---*/
+#contenedor-carrito {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito {
+  list-style-type: none;
+  padding: 0;
+}
+
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  background-color: #22874c;
+  border-radius: 5px;
+  color: #fff;
+}
+#total-carrito {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.container_mt-5 {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.cart-items {
+  margin: 20px 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.item-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+ .mt-5{
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.item-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.price {
+  font-size: 16px;
+  color: #000;
+}
+.text-carrito {
+  text-align: center;
+}
+.remove-item {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.remove-item:hover {
+  background-color: #ff1a1a;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.empty-cart, .checkout {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  width: 48%;
+}
+
+.empty-cart:hover, .checkout:hover {
+  background-color: #555;
+}
+  /*--- FOOTER ---*/
+  footer {
+    background-color: transparent;
+    padding: 35px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    border-top: 2px solid #ffffff;
+    margin-top: 70px;
+  }
+  
+  .footer_logo {
+    display: flexbox;
+  }
+  
+  .logo_footer {
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo_footer:hover {
+    transform: scale(1.2);
+  }
+  
+  /*--- MEDIA ---*/
+  @media screen and (max-width: 429px) {
+    footer {
+      background-color: transparent;
+      padding: 35px;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 1.1em;
+      font-weight: 100;
+      border-top: 1px solid #fff;
+      margin-top: 70px;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    .card-container {
+      display: flex;
+      justify-content: center;       
+  }
+     .card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  }
